@@ -1,0 +1,21 @@
+﻿<Window x:Class="MultiForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350.735" Width="431.303">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Bengal-LtGrayOutline.png" Stretch="Uniform"/>
+        </Grid.Background>
+        <Button x:Name="btnShowOther" Margin="272,10,21,277" Click="btnShowOther_Click" Content="Show Other form"/>
+        <StackPanel  HorizontalAlignment="Center" Margin="38,0,167,0" Width="218">
+            <TextBlock HorizontalAlignment="Center" x:Name="tbOne" FontSize="40"><Run Text="Hello"/></TextBlock>
+            <TextBlock x:Name="tbNames" FontSize="20" TextWrapping="Wrap" Margin="10,0"></TextBlock>
+        </StackPanel>
+        <Button x:Name="btnShowPeople" Margin="272,56,21,231" Click="btnShowPeople_Click" Content="Show People"/>
+        <Image HorizontalAlignment="Left" Height="207" Margin="297,81,0,0" VerticalAlignment="Top" Width="85" Source="Bengal-LtGrayOutline.png"/>
+    </Grid>
+</Window>
